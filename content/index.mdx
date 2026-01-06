@@ -21,3 +21,33 @@
     thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg/960px-Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg"
   />
 </Map>
+
+<Timeline
+  title="Empire in Moughal India"
+  range={{start: "1750", end: "1900", granularity: "year"}}
+  steps={50}
+  height="500px"
+>
+  <TimelinePoint
+    date="1770"
+    title="Great Bengal Famine"
+    summary="Starvation ravaged Company-controlled Bengal."
+  />
+  <TimelinePoint
+    date="1781"
+    title="Bengal Atlas published"
+    summary="James Rennell mapped Eastern India for Company campaigns."
+    referencedManifests={[
+      "https://api.dc.library.northwestern.edu/api/v2/works/7a5dd871-d0bc-4d6f-8469-1c23a872fc29?as=iiif",
+    ]}
+  />
+  <TimelinePoint
+    date="1857"
+    title="Great Mutiny"
+    summary="Indian regiments rebelled across the north."
+    highlight
+    referencedManifests={[
+      "https://api.dc.library.northwestern.edu/api/v2/works/c5a11577-a1f2-4288-95de-96ad616174ed?as=iiif",
+    ]}
+  />
+</Timeline>
