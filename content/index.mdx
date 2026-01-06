@@ -1,53 +1,350 @@
-<Map>
-  <MapPoint
-    lat="42.3763"
-    lng="-71.0603"
-    title="The Death of General Warren at the Battle of Bunker's Hill - 1775"
-    summary="A young Lieutenant Francis Rawdon, later Lord Hastings, is depicted prominently in the background, standing upon the American breastworks and waving the British ensign."
-    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg/960px-The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg"
+---
+title: Francis Rawdon-Hastings: Soldier, Statesman, and Imperial Administrator
+description: A long-form Canopy IIIF MDX example page using core components to narrate the life of Francis Rawdon-Hastings with embedded timelines and interpretive sections.
+image: https://iiif.dc.library.northwestern.edu/iiif/3/138a94b0-175a-4152-98c7-df58661ce7d5/950,520,7100,4740/!1200,630/0/default.jpg
+referencedManifests:
+  - https://api.dc.library.northwestern.edu/api/v2/works/7a5dd871-d0bc-4d6f-8469-1c23a872fc29?as=iiif
+  - https://api.dc.library.northwestern.edu/api/v2/works/c5a11577-a1f2-4288-95de-96ad616174ed?as=iiif
+---
+
+# Francis Rawdon-Hastings  
+## An Imperial Life in Three Continents (1754–1826)
+
+Francis Rawdon-Hastings (born **Francis Edward Rawdon**, later **2nd Earl of Moira**, and ultimately **1st Marquess of Hastings**) moved through the long eighteenth century and the early age of empire as soldier, patron, governor, and administrator. His life braided together the worlds of **Irish aristocratic inheritance**, **British military service in North America**, **high politics in London**, and **transformative colonial governance in India**—ending in the Mediterranean as **Governor of Malta**.
+
+This page is designed as a **long-form Canopy IIIF MDX example**: it demonstrates markdown structure, footnotes, and interactive components (Image, Viewer, Map, Slider, Timeline) while telling a coherent narrative. Each major phase of Rawdon-Hastings’ life is punctuated by a distinct timeline so readers can track chronology as the prose deepens.
+
+<ButtonWrapper variant="interstitial" text="Explore primary sources and context">
+  <Button
+    href="https://canopy-iiif.github.io/app/docs"
+    label="Browse Canopy IIIF docs"
   />
-  <MapPoint
-    lat="26.8709"
-    lng="80.9129"
-    title="Lucknow procession - 1814"
-    summary="Watercolour depicting Lord Francis Edward Rawdon-Hastings' party entering Lucknow on elephant back."
-    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Lord_Hastings%27_party_entering_the_city_of_Lucknow_on_elephant_back_-_British_Library%2C_Add.Or.4749.jpg/640px-Lord_Hastings%27_party_entering_the_city_of_Lucknow_on_elephant_back_-_British_Library%2C_Add.Or.4749.jpg"
+  <Button
+    href="https://github.com/canopy-iiif/template"
+    label="View template repo"
+    variant="secondary"
   />
-  <MapPoint
-    lat="35.8917"
-    lng="14.5050"
-    title="Tomb of Lord Hastings (d. 1826) - Valletta, Malta"
-    summary="Lord Hastings was appointed Governor of Malta in 1824, but died at sea near Naples (Napoli, Kingdom of the Two Sicilies) in 1826."
-    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg/960px-Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg"
-  />
-</Map>
+</ButtonWrapper>
+
+---
+
+## At a Glance
+
+- **Born:** 1754, County Down, Ireland  
+- **Key roles:** British Army officer; peer; Governor-General of India (1813–1823); Governor of Malta (1824–1826)  
+- **Known for:** Expanding British power in India during the Anglo-Maratha conflict; administrative reforms; cultural patronage; shaping early nineteenth-century imperial governance.
+
+> **Curatorial note:** This narrative treats Rawdon-Hastings not as a single heroic figure, but as a *node* in the broader networks of empire—military, political, administrative, and cultural.
+
+---
+
+## Part I — Origins, Education, and the Making of an Officer (1754–1774)
+
+Rawdon-Hastings was born into a world where birth defined opportunity. As the heir to an Anglo-Irish aristocratic line, he received an education designed to prepare him for public life: languages, polite culture, and the discipline necessary for command. His early trajectory was not unusual for a young aristocrat in the eighteenth century—except that the wars of empire soon accelerated his experience, placing him on the front lines of a conflict that would reshape the Atlantic world.
+
+In Britain’s imperial system, military service served as both career and credential. For Rawdon-Hastings, the army did not merely represent duty—it offered a stage for reputation and advancement. He entered military life just as tensions in North America escalated toward revolution.
+
+### Timeline: The Early Formation
 
 <Timeline
-  title="Empire in Moughal India"
-  range={{start: "1750", end: "1900", granularity: "year"}}
-  steps={50}
-  height="500px"
+  title="From Irish Inheritance to Atlantic War"
+  range={{ start: "1750", end: "1780", granularity: "year" }}
+  steps={30}
+  height="420px"
 >
   <TimelinePoint
-    date="1770"
-    title="Great Bengal Famine"
-    summary="Starvation ravaged Company-controlled Bengal."
+    date="1754"
+    title="Birth in Ireland"
+    summary="Francis Edward Rawdon is born into the Anglo-Irish aristocracy."
+  />
+  <TimelinePoint
+    date="1760s"
+    title="Education and elite networks"
+    summary="Receives aristocratic education shaped by Britain's culture of governance."
+  />
+  <TimelinePoint
+    date="1771"
+    title="Military commission"
+    summary="Enters the British Army, beginning a career intertwined with imperial conflict."
+    highlight
+  />
+  <TimelinePoint
+    date="1774"
+    title="Atlantic deployment"
+    summary="Moves toward active service as tensions in the American colonies intensify."
+  />
+</Timeline>
+
+---
+
+## Part II — War in America: Reputation in Revolution (1774–1781)
+
+The American Revolutionary War was not merely a military crisis—it was an ideological rupture. Rawdon-Hastings served within a British army attempting to maintain imperial order under conditions of escalating rebellion. The conflict was brutal, improvisational, and politically charged.
+
+His name is often associated with the **Battle of Bunker Hill**, where British assaults against fortified American positions became symbolic of the war’s cost. The battle’s imagery—smoke, bodies, flags, and momentum—became a shorthand for the early conflict. Rawdon-Hastings, as a young officer, appears in some representations as one among the British forces pressing into the contested landscape of colonial resistance.
+
+### Image: Visualizing Revolutionary War Memory
+
+<Image
+  src="https://iiif.dc.library.northwestern.edu/iiif/3/3d4a01f1-664d-48aa-89b7-a887d3843644"
+  isTiledImage
+  alt="Historic image or printed scene connected to the Revolutionary War era"
+  caption="Use Image for close-reading details in print culture—an ideal method for connecting narrative to interpretive visual analysis."
+/>
+
+In war narratives, reputations are built through repetition: dispatches, mentions, portraits, and later historical interpretations. What counts as “heroism,” “steadfastness,” or “judgment” is often measured less by tactical reality than by how stories circulate.
+
+### Key Patterns in This Phase
+
+1. **Mobility:** officers move rapidly between theaters.
+2. **Networked leadership:** promotions depend on patronage and reputation.
+3. **Visibility:** battles become political artifacts.
+
+> **Interpretive aside:** Revolutionary-era war is as much about *memory-making* as it is about strategy. The images that survive—and the positions figures occupy within them—shape what later readers assume about agency and importance.
+
+---
+
+### Timeline: Military Service in the American Revolution
+
+<Timeline
+  title="Revolutionary War Service"
+  range={{ start: "1774", end: "1785", granularity: "year" }}
+  steps={25}
+  height="450px"
+>
+  <TimelinePoint
+    date="1775"
+    title="Battle of Bunker Hill"
+    summary="British forces storm American positions; the battle becomes iconic in the war’s early imagery."
+    highlight
+  />
+  <TimelinePoint
+    date="1776"
+    title="Atlantic campaigning expands"
+    summary="War spreads across colonies; command and supply become unpredictable."
+  />
+  <TimelinePoint
+    date="1780"
+    title="Southern theater intensifies"
+    summary="Campaigns in the Carolinas and Georgia reveal the complexity of occupation and resistance."
   />
   <TimelinePoint
     date="1781"
-    title="Bengal Atlas published"
-    summary="James Rennell mapped Eastern India for Company campaigns."
+    title="War turns"
+    summary="British prospects shift dramatically; strategic decisions in London and America converge."
+  />
+</Timeline>
+
+---
+
+## Part III — A Political Life: Peerage, Patronage, and Parliament (1781–1813)
+
+Returning from America, Rawdon-Hastings transitioned into the terrain of **British politics**, where policy was shaped through aristocratic networks, party alignment, and the constant negotiation of empire. He became **Earl of Moira** and held political positions that placed him at the intersection of domestic governance and overseas ambition.
+
+This period is often framed as *interlude* in biographies that prioritize India, but it matters: it is here that he refined the skills of diplomacy, cultivated relationships, and developed an imperial worldview that would later guide his governorship.
+
+### Markdown Elements: Lists, Quotes, and Definition Notes
+
+- **Domestic politics:** debates over reform, war finance, and imperial strategy.
+- **Imperial policy:** the East India Company’s shifting role, territorial expansion, and administrative uncertainty.
+- **Personal prestige:** titles and ceremonial positioning create authority.
+
+Term  
+: *Imperial administrator* — a figure whose legitimacy is not only political but also performative: expressed through ceremony, documentation, and institutional reform.
+
+Another Term  
+: *Patronage network* — systems of support and advancement that guide who gets appointments, promotions, and access.
+
+> “A statesman is not only a policymaker, but a curator of relationships.”  
+> *(Attributed sentiment; presented here as a thematic lens rather than a direct quotation.)*
+
+---
+
+## Part IV — India: Governor-General and the Reordering of Power (1813–1823)
+
+Rawdon-Hastings’ appointment as **Governor-General of India** marked the apex of his career and the most consequential phase of his legacy. In India, administration was inseparable from military force. Governance required not only policy but the capacity to compel compliance across diverse political entities.
+
+His tenure is often associated with large-scale conflict: notably the **Anglo-Maratha War**, which expanded British influence and reshaped regional power. It also involved the ongoing management of diplomatic relations, revenue systems, and the cultural politics of rule. His wife, **Flora Mure-Campbell**, played a significant role in social and cultural dimensions of the administration, helping define the performative texture of British authority.
+
+### Viewer: Guided Exploration of an IIIF Work
+
+<Viewer
+  iiifContent="https://api.dc.library.northwestern.edu/api/v2/works/2826e1b9-d38c-413d-b46f-4cd28d916b6d?as=iiif"
+  options={{
+    showTitle: true,
+    informationPanel: {
+      open: true,
+      renderAbout: true,
+      renderToggle: true,
+    },
+  }}
+/>
+
+The Viewer component is particularly effective here because it supports a reading experience that resembles archival research: readers can move through canvases, view descriptive metadata, and compare materials as they read your interpretation.
+
+### Timeline: India as a Project of Governance and Force
+
+<Timeline
+  title="Governor-General of India"
+  range={{ start: "1810", end: "1825", granularity: "year" }}
+  steps={30}
+  height="500px"
+>
+  <TimelinePoint
+    date="1813"
+    title="Appointed Governor-General"
+    summary="Assumes leadership of British India with ambitious administrative and strategic goals."
+    highlight
+  />
+  <TimelinePoint
+    date="1817"
+    title="Conflict with Maratha powers"
+    summary="Military campaigns accelerate British territorial consolidation."
     referencedManifests={[
       "https://api.dc.library.northwestern.edu/api/v2/works/7a5dd871-d0bc-4d6f-8469-1c23a872fc29?as=iiif",
     ]}
   />
   <TimelinePoint
-    date="1857"
-    title="Great Mutiny"
-    summary="Indian regiments rebelled across the north."
+    date="1818"
+    title="Expansion of British control"
+    summary="The political map shifts as British power expands across central India."
+  />
+  <TimelinePoint
+    date="1823"
+    title="Departure from India"
+    summary="Leaves office after a decade that reshaped Company authority and territorial reach."
     highlight
-    referencedManifests={[
-      "https://api.dc.library.northwestern.edu/api/v2/works/c5a11577-a1f2-4288-95de-96ad616174ed?as=iiif",
-    ]}
   />
 </Timeline>
+
+---
+
+## Part V — Seeing Empire: Routes, Cities, and Ceremonial Space
+
+One way to understand Rawdon-Hastings’ career is to map it: not just as locations, but as transformations in political geography. His life spans:
+
+- the **Atlantic world** of revolution,  
+- the **subcontinental networks** of Company rule,  
+- and the **Mediterranean governance** of the late career.
+
+### Map: Anchoring the Narrative in Place
+
+<Map>
+  <MapPoint
+    lat="42.3763"
+    lng="-71.0603"
+    title="Bunker Hill (1775)"
+    summary="The Revolutionary War’s early iconic battle; Rawdon-Hastings appears in narratives and some representations as a young officer."
+    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg/960px-The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg"
+  />
+  <MapPoint
+    lat="26.8709"
+    lng="80.9129"
+    title="Lucknow (1814)"
+    summary="A ceremonial and administrative landscape where imperial authority was performed and contested."
+    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Lord_Hastings%27_party_entering_the_city_of_Lucknow_on_elephant_back_-_British_Library%2C_Add.Or.4749.jpg/640px-Lord_Hastings%27_party_entering_the_city_of_Lucknow_on_elephant_back_-_British_Library%2C_Add.Or.4749.jpg"
+  />
+  <MapPoint
+    lat="35.8917"
+    lng="14.5050"
+    title="Valletta, Malta (1824–1826)"
+    summary="Later appointed Governor of Malta; memorial sites and gardens mark his name in the Mediterranean."
+    thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg/960px-Malta_-_Valletta_-_Triq_il-Papa_Piju_V_-_Hastings_Gardens_-_Monument_to_Lord_Hastings_01_ies.jpg"
+  />
+</Map>
+
+> **Methodological prompt:** Ask readers to consider what the map omits. Which regions matter to governance even if the governor never sets foot there? What do “routes” conceal?
+
+---
+
+## Part VI — Objects and Archives: Building a Thematic Collection View
+
+If your exhibition is organized around themes rather than chronology, a Slider can surface related records and encourage browsing while your prose provides connective interpretation.
+
+### Slider: Thematic Browsing
+
+<Slider iiifContent="https://api.dc.library.northwestern.edu/api/v2/collections/7ac5769f-a1d9-4227-a350-bf8bd8b1cddc?as=iiif" />
+
+You can write narrative text before and after the Slider to guide interpretation:
+
+- Why are these records grouped?  
+- What interpretive question do they pose?  
+- How might metadata categories obscure lived realities?
+
+---
+
+## Part VII — Late Career: Malta, Mobility, and Death (1824–1826)
+
+After India, Rawdon-Hastings’ career moved into its final chapter: **Governor of Malta**. Malta represented a strategic Mediterranean node in Britain’s expanding imperial defense and shipping infrastructure.
+
+Yet the late career is also shaped by fragility: age, exhaustion, and the physical costs of decades of travel and administration. He died in 1826 while traveling at sea. The end, like much of his life, sits between places—neither fully “home” nor fully “colony,” but in the connective tissue of imperial geography.
+
+### Timeline: Final Years and Afterlives
+
+<Timeline
+  title="Malta and the End of an Imperial Life"
+  range={{ start: "1820", end: "1830", granularity: "year" }}
+  steps={20}
+  height="420px"
+>
+  <TimelinePoint
+    date="1823"
+    title="Returns from India"
+    summary="Leaves a transformed political landscape behind; reputation debated in Britain."
+  />
+  <TimelinePoint
+    date="1824"
+    title="Governor of Malta"
+    summary="Appointed to oversee strategic Mediterranean governance."
+    highlight
+  />
+  <TimelinePoint
+    date="1826"
+    title="Death at sea"
+    summary="Dies while traveling; memorialization continues through monuments, gardens, and historical writing."
+    highlight
+  />
+</Timeline>
+
+---
+
+## A Brief Table: Life Phases and Institutions
+
+| Phase | Primary Role | Geographic Focus | Institutional Setting |
+|------|--------------|------------------|-----------------------|
+| Youth | Heir / student | Ireland / Britain | Aristocratic estate & education |
+| War | Officer | North America | British Army |
+| Politics | Peer / patron | Britain | Parliament & elite networks |
+| India | Governor-General | South Asia | East India Company & imperial state |
+| Malta | Governor | Mediterranean | Colonial administration |
+
+---
+
+## Closing Reflection: What Does It Mean to Narrate an Imperial Life?
+
+Rawdon-Hastings’ life invites competing readings. One might narrate him as:
+
+- a disciplined officer rising by merit,  
+- a political actor navigating turbulent reform,  
+- a governor consolidating power through war,  
+- a cultural patron shaping ceremonial landscapes,  
+- or a figure whose “achievements” must be understood within the violence and extraction of empire.
+
+### Suggested Discussion Questions (for readers or classroom use)
+
+- How do **images** and **maps** influence historical interpretation?  
+- What does a **timeline** make easy—and what does it flatten?  
+- How should we read governors whose “administrative success” depended on coercion?  
+- What archival materials would change this story if we centered non-British perspectives?
+
+> **Note:** This MDX is intentionally verbose and component-rich to serve as a formatting and structure example for Canopy IIIF authors. You can trim sections while retaining the scaffolding.
+
+---
+
+## Footnotes
+
+[^1]: Rawdon-Hastings’ titles shifted over time; this narrative uses “Rawdon-Hastings” as a practical umbrella label across phases.
+[^2]: Timelines in Canopy IIIF are especially useful when an exhibition alternates between narrative interpretation and object-centered analysis.
+[^3]: Map points here function as interpretive anchors rather than exhaustive geography; they are chosen to represent major narrative pivots.
+[^4]: Slider content ideally points to records that mirror your interpretive question; think of it as a curated “evidence band.”
+[^5]: Viewer embeds are powerful when paired with explicit prompts—ask readers to find details, compare canvases, or interpret metadata fields.
